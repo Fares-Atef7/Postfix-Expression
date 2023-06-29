@@ -105,14 +105,11 @@ public class Main {
                         //CONVERT THE FINAL RESULT FROM DOUBLE TO STRING TO CAN PUSH AND POP IT IN STACK
                         result$ = Double.toString(result);
                         stack.push(result$);
-
-
                     }
 
                 } else {//IF THERE IS NOT AN OPERATORS OR DIGIT
                     continue;
                 }
-
             }
         }//RETURN THE TOP
         String top = stack.pop();
@@ -120,11 +117,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String s = "4+(1-2*8) ";//3*(5+4)-6/(1+2)
-        String sq = "3 2 * 4 - 7 / ";
+        String s = "4+(1-2*8) ";//3*(5+4)-6/(1+2)   
+        String sq = "3 2 * 4 - 7 / ";// click space between each number or operators 
         System.out.println(convert(s));
         System.out.println(Evaluatee(sq));
 
     }
 }
-//c.matches ( "[+-]?\\d+(\\.\\d+)?" )
